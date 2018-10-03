@@ -3,6 +3,7 @@ class Person
   attr_accessor
   
   def initialize(attributes)
-    self.send {|attributes|
+    attributes.each |key, value|
+    {self.send {key=,value}
   end
 end
